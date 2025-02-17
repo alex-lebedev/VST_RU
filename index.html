@@ -7,31 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Верхний фиксированный бар с кнопкой "Далее" -->
-  <div class="top-bar">
-    <button id="nextStage">Далее</button>
+  <div class="copyright">
+    ©2024 by Александр Лебедев
   </div>
-  <div class="copyright">©2024 by Александр Лебедев</div>
+
   <div id="instructions">
-      <p>Свайпните карточку вправо (Сохранить) или влево (Отбросить).</p>
+      <p>Свайпните карточку вправо (Сохранить) или влево (Отбросить). Нажмите "Далее", чтобы продолжить.</p>
   </div>
-  <!-- Обёртка колоды с навигационными стрелками -->
+
+  <!-- Обёртка колоды и стрелок -->
   <div id="card-container-wrapper">
     <button id="discardArrow" class="arrow">←</button>
     <div id="card-container"></div>
     <button id="keepArrow" class="arrow">→</button>
   </div>
+
   <div class="pile-container">
       <div class="pile" id="keep">
-          <h2>Сохранить (<span class="count">0</span>)</h2>
+          <h2>Сохранить (0)</h2>
       </div>
       <div class="pile" id="discard">
-          <h2>Отбросить (<span class="count">0</span>)</h2>
+          <h2>Отбросить (0)</h2>
       </div>
   </div>
-  <!-- Подключаем библиотеку jsPDF -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <button id="nextStage">Далее</button>
+
+  <!-- Блок, где будет выводиться финальный результат -->
+  <div id="result-screen" style="display: none;"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
 
