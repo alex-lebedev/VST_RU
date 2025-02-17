@@ -53,22 +53,24 @@ body {
 /* Обёртка для колоды и стрелок */
 #card-container-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 10px;
-    position: relative;
+    align-items: center;        /* Вертикальное выравнивание стрелок и колоды */
+    justify-content: center;    /* Горизонтальное выравнивание по центру */
+    gap: 10px;                  /* Расстояние между стрелками и колодой */
+    margin: 80px auto 20px;     /* Доп. отступ сверху, чтобы не накладывалось на верхний бар */
+    max-width: 600px;           /* Ограничиваем максимальную ширину */
 }
 
-/* Стрелки навигации */
 .arrow {
-    font-size: 2em;
+    font-size: 2rem;    /* Сделаем стрелки крупнее */
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    line-height: 1;     /* Чтобы текст не сдвигался по вертикали */
+    padding: 0 10px;    /* Горизонтальные отступы */
 }
+
 .arrow:focus {
-    outline: none;
+    outline: none;      /* Убираем обводку при клике */
 }
 
 /* Контейнер для карточек */
