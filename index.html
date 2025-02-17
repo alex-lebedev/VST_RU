@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сортировка ключевых ценностей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="copyright">©2024 by Александр Лебедев</div>
+  <div id="instructions">
+      <p>Свайпните карточку вправо (Сохранить) или влево (Отбросить). Нажмите "Далее", чтобы продолжить.</p>
+  </div>
+  <div id="card-container"></div>
+  <div class="pile-container">
+      <div class="pile" id="keep">
+          <h2>Сохранить (0)</h2>
+      </div>
+      <div class="pile" id="discard">
+          <h2>Отбросить (0)</h2>
+      </div>
+  </div>
+  <button id="nextStage">Далее</button>
+
+  <!-- Подключаем библиотеку jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
