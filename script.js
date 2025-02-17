@@ -255,40 +255,55 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Генерация PDF с итоговыми значениями и вдохновляющим посланием
     function generatePDF(finalValues) {
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
-
-        // Для поддержки кириллицы добавляем шрифт, поддерживающий русские символы.
-        // Замените "BASE64_FONT_DATA" на реальные данные в формате base64 для выбранного TTF-шрифта (например, DejaVuSans.ttf)
-        doc.addFileToVFS("DejaVuSans.ttf", "BASE64_FONT_DATA");
-        doc.addFont("DejaVuSans.ttf", "DejaVuSans", "normal");
-        doc.setFont("DejaVuSans");
-
-        let y = 20;
-        doc.setFontSize(18);
-        doc.text("Ваши Ключевые Ценности", 10, y);
-        y += 10;
-        doc.setFontSize(12);
-        finalValues.forEach((value, index) => {
-            const line = `${index + 1}. ${value.name} – ${value.description} (${value.importance})`;
-            const splitText = doc.splitTextToSize(line, 180);
-            doc.text(splitText, 10, y);
-            y += splitText.length * 7;
-            if (y > 270 && index < finalValues.length - 1) {
-                doc.addPage();
-                y = 20;
-            }
-        });
-        y += 10;
-        doc.setFontSize(14);
-        doc.text(
-          "Вдохновляющие слова:\nВаши ценности – отражение вашей уникальности и силы. Продолжайте идти вперёд!",
-          10,
-          y,
-          { maxWidth: 180 }
-        );
-        doc.save("core_values.pdf");
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+    
+      // Вставьте сюда реальный base64-код TTF-шрифта DejaVuSans (или другого поддерживающего кириллицу).
+      // Получить такой код можно, например, через https://transfonter.org или fontconvert.
+      const dejavuSansBase64 = `
+    AAEAAAASAQAABAAQRFNJRwAAAAEAAAECdwAAAA8AAAAV... (ОБРЕЗАНО ДЛЯ ПРИМЕРА)
+      `;
+    
+      // Подключаем шрифт к "виртуальной файловой системе" jsPDF
+      doc.addFileToVFS("DejaVuSans.ttf", dejavuSansBase64);
+    
+      // Регистрируем шрифт под именем "DejaVuSans"
+      doc.addFont("DejaVuSans.ttf", "DejaVuSans", "normal");
+    
+      // Устанавливаем шрифт и его стиль
+      doc.setFont("DejaVuSans", "normal");
+      doc.setFontSize(18);
+    
+      let y = 20;
+      doc.text("Ваши Ключевые Ценности", 10, y);
+      y += 10;
+      doc.setFontSize(12);
+    
+      finalValues.forEach((value, index) => {
+        const line = `${index + 1}. ${value.name} – ${value.description} (${value.importance})`;
+        // Чтобы текст не выходил за правый край, разбиваем строку по ширине 180
+        const splitText = doc.splitTextToSize(line, 180);
+        doc.text(splitText, 10, y);
+        y += splitText.length * 7;
+        // Если приближаемся к нижнему краю, создаём новую страницу
+        if (y > 270 && index < finalValues.length - 1) {
+          doc.addPage();
+          y = 20;
+        }
+      });
+    
+      y += 10;
+      doc.setFontSize(14);
+      doc.text(
+        "Вдохновляющие слова:\nВаши ценности – отражение вашей уникальности и силы. Продолжайте идти вперёд!",
+        10,
+        y,
+        { maxWidth: 180 }
+      );
+    
+      doc.save("core_values.pdf");
     }
+
     
     function advanceStage() {
         if (!checkStageCompletion()) return;
