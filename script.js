@@ -6,65 +6,65 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Автономность", description: "Свобода и независимость в мыслях и действиях." },
         { name: "Религия", description: "Соблюдение религиозных убеждений и практик." },
         { name: "Семья", description: "Ценить и отдавать приоритет семейным отношениям." },
-        { name: "Инновации", description: "Стремление к новым идеям и творческим подходам в решении задач." },
+        { name: "Инновации", description: "Стремление к новым идеям и творческим подходам." },
         { name: "Прощение", description: "Отпускать обиды и двигаться впёред с пониманием." },
-        { name: "Порядок", description: "Выбор в пользу четкости, предсказуемости и структуры." },
-        { name: "Критическое мышление", description: "Глубокий анализ и критическая оценка сложностей." },
-        { name: "Служение", description: "Посвящение себя делу, выходящему за рамки личной выгоды." },
-        { name: "Сострадание", description: "Проявление эмпатии и доброты к другим." },
-        { name: "Образование", description: "Ценность приобретения знаний и обучения." },
+        { name: "Порядок", description: "Четкость, предсказуемость и структура." },
+        { name: "Критическое мышление", description: "Глубокий анализ и оценка сложностей." },
+        { name: "Служение", description: "Посвящение делу, выходящему за рамки личной выгоды." },
+        { name: "Сострадание", description: "Эмпатия и доброта к другим." },
+        { name: "Образование", description: "Приобретение знаний и обучение." },
         { name: "Честность", description: "Соблюдение моральных и этических принципов." },
-        { name: "Свобода", description: "Возможность говорить, действовать и мыслить без препятствий." },
-        { name: "Мужество", description: "Противостоять страхам и отстаивать то, что правильно." },
-        { name: "Справедливость", description: "Содействие справедливости, равенству и ответственности." },
+        { name: "Свобода", description: "Возможность говорить, действовать и мыслить свободно." },
+        { name: "Мужество", description: "Противостояние страхам и защита своих убеждений." },
+        { name: "Справедливость", description: "Равенство, ответственность и честность." },
         { name: "Здоровье", description: "Приоритет физического, психического и эмоционального благополучия." },
-        { name: "Слава", description: "Быть широко известным и узнаваемым." },
-        { name: "Уважение", description: "Проявление внимания и уважения к другим и себе." },
-        { name: "Верность", description: "Быть верным обязательствам и обязанностям." },
-        { name: "Творчество", description: "Самовыражение через оригинальные идеи и инновации." },
-        { name: "Радость", description: "Стремление к счастью и радости в жизни." },
-        { name: "Лидерство", description: "Вдохновение и управление другими во имя общей цели." },
-        { name: "Скромность", description: "Скромное восприятие себя и своей важности." },
-        { name: "Возможности", description: "Широкие возможности принятия решений для себя и других." },
-        { name: "Альтруизм", description: "Бескорыстное действие на благо других." },
-        { name: "Приключения", description: "Поиск новых и захватывающих переживаний." },
-        { name: "Мудрость", description: "Применение знаний, опыта и проницательности в принятии решений." },
-        { name: "Баланс", description: "Поддержание гармонии между различными аспектами жизни." },
-        { name: "Стабильность", description: "Поддержание постоянства и надежности в жизни." },
-        { name: "Благодарность", description: "Быть благодарным за добро в жизни и выражать признательность." },
-        { name: "Честь", description: "Соблюдение принципов честности и уважения." },
-        { name: "Щедрость", description: "Способность отдавать без ожидания чего-либо взамен." },
-        { name: "Настойчивость", description: "Непоколебимое продолжение действий вопреки трудностям." },
-        { name: "Интерес", description: "Иметь сильное желание учиться и понимать." },
-        { name: "Ответственность", description: "Быть ответственным за свои действия и их последствия." },
-        { name: "Власть", description: "Реализация контроля или влияния над другими." },
-        { name: "Традиции", description: "Ценность и сохранение культурных практик и норм." },
-        { name: "Инклюзивность", description: "Обеспечение возможности участия и принятия каждого." },
-        { name: "Устойчивое развитие", description: "Удовлетворение потребностей без ущерба будущим поколениям." },
-        { name: "Аутентичность", description: "Жить искренне, в гармонии со своими истинными чувствами." },
-        { name: "Устойчивость", description: "Быстрое восстановление после трудностей; стойкость." },
-        { name: "Мир", description: "Стремление к гармонии и свободе от конфликтов." },
-        { name: "Любовь", description: "Глубокая привязанность и забота о ком-то или о чем-то." },
+        { name: "Слава", description: "Быть узнаваемым и известным." },
+        { name: "Уважение", description: "Внимание и уважение к другим и себе." },
+        { name: "Верность", description: "Верность обязательствам и обязанностям." },
+        { name: "Творчество", description: "Самовыражение через оригинальные идеи." },
+        { name: "Радость", description: "Стремление к счастью и радости." },
+        { name: "Лидерство", description: "Вдохновение и управление для общей цели." },
+        { name: "Скромность", description: "Скромное восприятие себя." },
+        { name: "Возможности", description: "Широкий выбор для принятия решений." },
+        { name: "Альтруизм", description: "Действия на благо других." },
+        { name: "Приключения", description: "Поиск новых захватывающих переживаний." },
+        { name: "Мудрость", description: "Применение знаний и опыта." },
+        { name: "Баланс", description: "Гармония между различными аспектами жизни." },
+        { name: "Стабильность", description: "Постоянство и надежность." },
+        { name: "Благодарность", description: "Признательность за добро в жизни." },
+        { name: "Честь", description: "Соблюдение принципов честности." },
+        { name: "Щедрость", description: "Способность отдавать без ожидания." },
+        { name: "Настойчивость", description: "Упорство вопреки трудностям." },
+        { name: "Интерес", description: "Желание учиться и познавать." },
+        { name: "Ответственность", description: "Ответственность за свои действия." },
+        { name: "Власть", description: "Влияние и контроль." },
+        { name: "Традиции", description: "Сохранение культурных практик." },
+        { name: "Инклюзивность", description: "Участие и принятие каждого." },
+        { name: "Устойчивое развитие", description: "Удовлетворение потребностей без ущерба будущему." },
+        { name: "Аутентичность", description: "Жить в гармонии со своими истинными чувствами." },
+        { name: "Устойчивость", description: "Быстрое восстановление после трудностей." },
+        { name: "Мир", description: "Гармония и отсутствие конфликтов." },
+        { name: "Любовь", description: "Глубокая привязанность и забота." },
         { name: "Оптимизм", description: "Позитивный взгляд на будущее." },
-        { name: "Осознанность", description: "Быть в настоящем, полностью погруженным в момент." },
-        { name: "Эффективность", description: "Достижение максимальной продуктивности с минимальными усилиями." },
-        { name: "Безопасность", description: "Чувство защищенности в своей среде или отношениях." },
-        { name: "Богатство", description: "Накопление материальных и финансовых благ." },
+        { name: "Осознанность", description: "Погружённость в настоящий момент." },
+        { name: "Эффективность", description: "Максимальная продуктивность с минимальными усилиями." },
+        { name: "Безопасность", description: "Чувство защищенности." },
+        { name: "Богатство", description: "Материальные и финансовые блага." },
         { name: "Эмпатия", description: "Понимание и разделение чувств другого." },
-        { name: "Юмор", description: "Ценность того, что смешно и забавно." },
-        { name: "Значимая работа", description: "Занятие, имеющее положительное влияние." },
-        { name: "Терпение", description: "Спокойное принятие трудностей без раздражения." },
-        { name: "Дисциплина", description: "Развитие самоконтроля и ясности поведения." },
-        { name: "Мастерство", description: "Достижение высокого уровня умения в деле." },
-        { name: "Равенство", description: "Вера в равные права и возможности для всех." },
-        { name: "Саморефлексия", description: "Осмысление собственных мыслей и чувств." },
-        { name: "Кооперация", description: "Совместная работа с другими для достижения цели." },
-        { name: "Адаптивность", description: "Способность быстро приспосабливаться к изменениям." },
-        { name: "Прозрачность", description: "Открытость и честность в общении." },
-        { name: "Усердие", description: "Настойчивая работа для достижения целей." },
+        { name: "Юмор", description: "Ценность забавного и смешного." },
+        { name: "Значимая работа", description: "Работа с положительным влиянием." },
+        { name: "Терпение", description: "Спокойное принятие трудностей." },
+        { name: "Дисциплина", description: "Самоконтроль и ясность поведения." },
+        { name: "Мастерство", description: "Достижение высокого уровня умения." },
+        { name: "Равенство", description: "Равные права и возможности для всех." },
+        { name: "Саморефлексия", description: "Осмысление собственных мыслей." },
+        { name: "Кооперация", description: "Совместная работа для достижения целей." },
+        { name: "Адаптивность", description: "Быстрое приспособление к изменениям." },
+        { name: "Прозрачность", description: "Открытость и честность." },
+        { name: "Усердие", description: "Настойчивость в достижении целей." },
         { name: "Духовность", description: "Поиск глубокого смысла, превосходящего личное." },
         { name: "Поддержка", description: "Помощь тем, кто в ней нуждается." },
-        { name: "Интуиция", description: "Понимание без сознательного анализа." }
+        { name: "Интуиция", description: "Понимание без анализа." }
     ];
     
     // Начальное копирование массива с добавлением поля importance
@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const discardPile = document.getElementById('discard');
     const instructionsElement = document.getElementById('instructions');
     const nextStageButton = document.getElementById('nextStage');
+    const discardArrow = document.getElementById('discardArrow');
+    const keepArrow = document.getElementById('keepArrow');
     
     let initiallyDiscarded = []; // для отслеживания первоначально отброшенных карточек
     
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function displayInstructions() {
         const instructions = [
-            "Выберите все ценности, которые соответствуют вам. Свайпните карточку вправо (Сохранить) или влево (Отбросить).",
+            "Выберите ценности, соответствующие вам.",
             "Оставьте только 15 карточек.",
             "Оставьте только 10 карточек.",
             "Оставьте только 5 карточек."
@@ -118,15 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
         instructionsElement.textContent = instructions[currentStage];
     }
     
+    // Обновление счётчиков карточек в зонах
     function updatePileCounts() {
         const keepCount = keepPile.querySelectorAll('.card').length;
         const discardCount = discardPile.querySelectorAll('.card').length;
-        keepPile.querySelector('h2').textContent = `Сохранить (${keepCount})`;
-        discardPile.querySelector('h2').textContent = `Отбросить (${discardCount})`;
+        keepPile.querySelector('.count').textContent = keepCount;
+        discardPile.querySelector('.count').textContent = discardCount;
     }
     
     function clearDiscardPile() {
-        discardPile.innerHTML = '<h2>Отбросить (0)</h2>';
+        discardPile.innerHTML = '<h2>Отбросить (<span class="count">0</span>)</h2>';
     }
     
     // Drag&Drop для десктопа
@@ -149,10 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const diffX = endX - startX;
     
             if (diffX > swipeThreshold) {
-                // Свайп вправо – сохраняем карточку
                 keepPile.appendChild(card);
             } else if (diffX < -swipeThreshold) {
-                // Свайп влево – отбрасываем карточку
                 discardPile.appendChild(card);
             }
     
@@ -223,6 +224,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // Обработчики стрелок: имитируют свайп
+    discardArrow.addEventListener('click', () => {
+        const card = cardContainer.querySelector('.card');
+        if(card) {
+            discardPile.appendChild(card);
+            updatePileCounts();
+            displayTopCardOnly();
+        }
+    });
+    
+    keepArrow.addEventListener('click', () => {
+        const card = cardContainer.querySelector('.card');
+        if(card) {
+            keepPile.appendChild(card);
+            updatePileCounts();
+            displayTopCardOnly();
+        }
+    });
+    
     function checkStageCompletion() {
         const keepCount = keepPile.querySelectorAll('.card').length;
         if ((currentStage === 0 && keepCount < stages[currentStage]) || 
@@ -237,6 +257,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePDF(finalValues) {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
+
+        // Для поддержки кириллицы добавляем шрифт, поддерживающий русские символы.
+        // Замените "BASE64_FONT_DATA" на реальные данные в формате base64 для выбранного TTF-шрифта (например, DejaVuSans.ttf)
+        doc.addFileToVFS("DejaVuSans.ttf", "BASE64_FONT_DATA");
+        doc.addFont("DejaVuSans.ttf", "DejaVuSans", "normal");
+        doc.setFont("DejaVuSans");
+
         let y = 20;
         doc.setFontSize(18);
         doc.text("Ваши Ключевые Ценности", 10, y);
@@ -255,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
         y += 10;
         doc.setFontSize(14);
         doc.text(
-          "Вдохновляющие слова:\nВаши ценности – отражение вашей уникальности и силы. Продолжайте идти вперед и достигайте новых высот!",
+          "Вдохновляющие слова:\nВаши ценности – отражение вашей уникальности и силы. Продолжайте идти вперёд!",
           10,
           y,
           { maxWidth: 180 }
@@ -278,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     name: card.querySelector('strong').textContent,
                     description: card.querySelector('p').textContent
                 }));
-                keepPile.innerHTML = '<h2>Сохранить (0)</h2>';
+                keepPile.innerHTML = '<h2>Сохранить (<span class="count">0</span>)</h2>';
                 values = keptValues.map(val => ({ ...val, importance: 0 }));
                 cardContainer.innerHTML = '';
                 values.forEach((value, index) => {
@@ -297,7 +324,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const finalValues = [...keepPile.querySelectorAll('.card')].map(card => ({
                 name: card.querySelector('strong').textContent,
                 description: card.querySelector('p').textContent,
-                // Берем значение importance из массива values по имени
                 importance: values.find(v => v.name === card.querySelector('strong').textContent).importance
             }));
     
@@ -314,6 +340,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cardContainer.style.display = 'none';
             document.querySelector('.pile-container').style.display = 'none';
             nextStageButton.style.display = 'none';
+            discardArrow.style.display = 'none';
+            keepArrow.style.display = 'none';
     
             // Генерируем PDF с итоговыми данными
             generatePDF(finalValues);
