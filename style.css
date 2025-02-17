@@ -1,0 +1,108 @@
+/* Общий стиль */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    color: #333;
+}
+
+/* Блок с инструкциями */
+#instructions {
+    font-size: 1.2em;
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Контейнер для карточек */
+#card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Карточки ценностей */
+.card {
+    width: 90%;
+    max-width: 350px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 15px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Зоны для сохранения и отброса */
+.pile-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.pile {
+    background: rgba(255,255,255,0.9);
+    width: 45%;
+    min-height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.pile h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+.pile.over {
+    background-color: #e9ecef;
+}
+
+/* Кнопка для перехода к следующему этапу */
+#nextStage {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1em;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+#nextStage:hover {
+    background-color: #0056b3;
+}
+
+/* Копирайт */
+.copyright {
+    font-size: 0.8em;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: #666;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 600px) {
+    .pile {
+        width: 90%;
+    }
+    #instructions {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
