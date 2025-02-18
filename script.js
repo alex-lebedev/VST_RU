@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function updatePileCounts() {
         const keepCount = keepPile.querySelectorAll('.card').length;
         const discardCount = discardPile.querySelectorAll('.card').length;
-        keepPile.querySelector('h2').textContent = `Сохранить (${keepCount})`;
-        discardPile.querySelector('h2').textContent = `Отбросить (${discardCount})`;
+        keepPile.querySelector('h2').textContent = `Да (${keepCount})`;
+        discardPile.querySelector('h2').textContent = `Нет (${discardCount})`;
     }
 
     function clearDiscardPile() {
