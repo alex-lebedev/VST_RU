@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function clearDiscardPile() {
-        discardPile.innerHTML = '<h2>Отбросить (0)</h2>';
+        discardPile.innerHTML = '<h2>Нет (0)</h2>';
     }
 
     // Drag&Drop для десктопа
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     name: card.querySelector('strong').textContent,
                     description: card.querySelector('p').textContent
                 }));
-                keepPile.innerHTML = '<h2>Сохранить (0)</h2>';
+                keepPile.innerHTML = '<h2>Да (0)</h2>';
                 values = keptValues.map(val => ({ ...val, importance: 0 }));
                 cardContainer.innerHTML = '';
                 values.forEach((value, index) => {
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }));
 
             // Обновляем визуальное представление итоговых карточек
-            keepPile.innerHTML = '<h2>Сохранить</h2>';
+            keepPile.innerHTML = '<h2>Да</h2>';
             finalValues.forEach(value => {
                 const card = document.createElement('div');
                 card.classList.add('card');
