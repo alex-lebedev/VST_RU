@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Верхний фиксированный бар с кнопкой "Далее" */
+/* ======== Верхний фиксированный бар с кнопкой "Далее" ======== */
 .top-bar {
     position: fixed;
     top: 0;
@@ -31,70 +31,58 @@ body {
     background-color: #0056b3;
 }
 
-/* Копирайт */
-copyright {
-    font-size: 0.8em;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    color: #666;
-}
-
-/* Блок с инструкциями */
+/* ======== Инструкции ======== */
 #instructions {
-    font-size: 1.2em;
-    background: rgba(255,255,255,0.9);
-    padding: 15px;
-    margin: 60px 10px 10px; /* Отступ сверху, чтобы не накладывалось под фиксированный бар */
-    border-radius: 8px;
-    text-align: center;
+    /* Добавляем отступ сверху, чтобы блок не накладывался на фиксированный бар */
+    margin: 60px 10px 10px;
 }
 
-/* Обёртка для колоды и стрелок */
+/* ======== Обёртка для колоды и стрелок ======== */
 #card-container-wrapper {
     display: flex;
-    align-items: center;      /* Вертикальное выравнивание стрелок и колоды */
-    justify-content: center;  /* Горизонтальное выравнивание по центру */
-    gap: 10px;                /* Расстояние между стрелками и колодой */
-    margin: 20px auto;        /* Автовыравнивание по центру */
-    max-width: 600px;         /* Ограничиваем максимальную ширину */
+    align-items: center;     /* вертикальное выравнивание стрелок и колоды */
+    justify-content: center; /* горизонтальное выравнивание по центру */
+    gap: 20px;               /* увеличиваем расстояние между стрелками и колодой */
+    max-width: 600px;        
+    margin: 20px auto;
+    position: relative;      /* чтобы можно было управлять z-index внутри */
 }
 
+/* Стрелки */
 .arrow {
-    font-size: 2rem;          /* Сделаем стрелки крупнее */
+    font-size: 2rem;
     background: none;
     border: none;
     cursor: pointer;
-    line-height: 1;           /* Чтобы текст не сдвигался по вертикали */
-    flex-shrink: 0;           /* Запретим сжатие стрелок */
-    padding: 0 15px;          /* Горизонтальные отступы */
+    line-height: 1;
+    flex-shrink: 0;
+    z-index: 2;              /* чтобы стрелка отображалась поверх карточки, если места мало */
+    padding: 0 10px;         /* горизонтальные отступы */
 }
-
 .arrow:focus {
-    outline: none;            /* Убираем обводку при клике */
+    outline: none;
 }
 
-/* Контейнер для карточек */
+/* ======== Контейнер для карточек ======== */
 #card-container {
-    width: 100%;
-    max-width: 320px;
-    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;    
+    max-width: 300px;  /* уменьшаем ширину, чтобы оставалось место под стрелки */
+    min-height: 200px;
 }
 
-/* Карточки ценностей */
+/* ======== Сами карточки ======== */
 .card {
-    width: 100%;
+    width: 100%;       
+    max-width: 300px;  /* или 280px, если нужно ещё больше места для стрелок */
+    min-height: 200px;
+    margin: 5px auto;  /* чуть уменьшим внешние отступы */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     padding: 15px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     transition: transform 0.3s ease;
     cursor: pointer;
