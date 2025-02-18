@@ -78,6 +78,7 @@ copyright {
 
 /* Кнопки стрелок под карточкой */
 #arrow-buttons {
+    white-space: nowrap;
     display: flex;
     justify-content: center;
     /* Увеличим расстояние между кнопками */
