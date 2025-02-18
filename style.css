@@ -80,26 +80,41 @@ copyright {
 #arrow-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    max-width: 320px;
-    margin: 10px auto;
+    /* Увеличим расстояние между кнопками */
+    gap: 30px;
+    /* Дадим чуть больше ширины, чтобы кнопки не ломались на узких экранах */
+    max-width: 400px;
+    /* Увеличим отступы сверху и снизу */
+    margin: 20px auto;
 }
+
 .arrow {
-    font-size: 1.1em;
-    padding: 10px 15px;
+    /* Увеличим общий размер текста */
+    font-size: 1.2em;
+    /* Добавим побольше внутреннего отступа, чтобы кнопки казались крупнее */
+    padding: 14px 20px;
+    /* Цвет и стиль фона/рамки можно менять по вкусу */
     background: #fff;
     border: 2px solid #007bff;
-    border-radius: 25px;
+    border-radius: 30px;  /* Сделаем кнопки более «пузырьковыми» */
     cursor: pointer;
     color: #007bff;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Можно добавить отступ между текстом и стрелкой, если нужно:
+       white-space: nowrap;  чтобы текст не переносился на мобильных */
 }
+
+/* При наведении меняем фон, чтобы было видно, что кнопка интерактивная */
 .arrow:hover {
     background: #e8f2ff;
+    color: #0056b3;
 }
+
+/* При фокусе убираем стандартную обводку */
 .arrow:focus {
     outline: none;
 }
+
 
 /* Зоны для сохранения и отброса */
 .pile-container {
