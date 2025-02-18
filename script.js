@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         resultScreen.innerHTML += `
           <p style="margin-top: 20px;">
-            <strong>Вдохновляющие слова:</strong><br>
+            <strong>Помните:</strong><br>
             Ваши ценности – отражение вашей уникальности и силы.
             Продолжайте идти вперёд и достигайте новых высот!
           </p>
